@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalabre=0 /">
+        <title>Formulário de Cadastro</title>
+        <link rel="stylesheet" href="assets/css/estilo.css">
+        <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lobster&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        
+        <header id="topo">
+            <div class="container">
+                <h1>Seja bem-vindo(a) ao</h1>
+                <h1>Formulário de Matrícula</h1> 
+            </div>           
+        </header>
+
+        <section>
+            <div class="container">
+
+                <div class="cadastro">
+
+                    <h2>Dados do Aluno</h2>
+                    <div class="dadosAluno">
+                        
+                        <div class="templateAluno">
+                            <div class="dados1">
+                                Nome Completo: <br/>
+                                <input type="text" name="nome" placeholder="Nome completo" maxlength="40" autofocus> <br/>
+                                RG:<br/>
+                                <input type="number" name="rg" max="9" placeholder="xxxxxxxxx" width="9"> <br/>
+                                Telefone 1:<br/>
+                                <input type="tel" name="tel1" placeholder="(51)xxxxxxxx" maxlength="11"><br/>
+                                Nome da Mãe:<br/>
+                                <input type="text" name="nome" placeholder="Nome completo da Mãe" maxlength="40"> <br/>
+                                E-mail:<br/>
+                                <input type="email" name="email" placeholder="Digite o seu e-mail"> <br/>
+                            </div>
+
+                            
+                            <div class="dados2">
+                                Data de Nascimento:<br/>
+                                <input type="date" name="dataNasc" placeholder="Digite o seu ano de nascimento"><br/>
+                                CPF:<br/>
+                                <input type="text" name="rg" placeholder="xxx.xxx.xxx-xx" maxlength="11"><br/>
+                                Telefone 2: <br/>
+                                <input type="tel" name="tel2" placeholder="(51)xxxxxxxx" maxlength="9"><br/>
+                                Endereço:<br/>
+                                <input type="text" name="endereco" placeholder="Rua,Avenida,..."> <br/>
+                                Número:<br/>
+                                 <input type="number" name="numero" id="numero" maxlength="4" min="1" size="5"> <br/>
+                            </div>
+                            
+                           
+                        </div>
+                           
+                    </div>
+                    
+                    <h2>Dados da Matrícula</h2>
+                    <div class="matricula">
+
+                        <div class="matricula1">
+                            Matrícula: <br/>
+                            <input type="text" name="matricula" placeholder="Digite a sua Matrícula"><br/>
+                            Senha: <br/>
+                            <input type="password" name="senha" placeholder="Digite a sua Senha"><br/>
+
+                            Selecione o semestre: 
+                            <select name="matricula" id="matricula">
+                                <option value="1">1° Semestre</option>
+                                <option value="2">3° Semestre</option>
+                                <option value="3">5° Semestre</option>
+                            </select>
+                        </div>
+
+                        <div class="matricula2">
+                            Selecione o turno: <br/>
+                            <input type="radio" id="manha" name="turno" checked>Manhã
+                            <input type="radio" id="tarde" name="turno">Tarde
+                            <input type="radio" id="noite" name="turno">Noite
+                        </div>
+
+                        Observações:
+                        <textarea name="observacao" id="" cols="65" rows="10" placeholder="Digite as suas observações caso necessário."></textarea>
+
+                        <input type="checkbox"/>Estou ciente.<br/>
+                    </div>
+
+                    <div class="botao">
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Limpar">
+                    </div> 
+                                    
+                </div>
+                
+            </div>
+
+        </section>
+
+
+        <footer>
+            <div class="rodape">
+               <p>
+                &copy;Diego Rafael Vieira  <a target="_blank" href=https://www.linkedin.com/in/diegorafaelvieira/> <img src="assets/images/linkedin.png" height="15" width="15"></a> 
+               </p> 
+            </div>
+            
+        </footer>
+
+    </body>
+</html>

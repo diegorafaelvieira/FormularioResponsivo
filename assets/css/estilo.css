@@ -1,0 +1,298 @@
+body {
+    margin: 0;
+    background:linear-gradient(to right,green,white);
+    background: -moz-linear-gradient(to right,green,white);
+    background: -webkit-linear-gradient(to right,green,white);
+    font-family: 'Indie Flower', cursive;
+    font-size: 18px;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    text-shadow: 3px 3px black;
+    border-bottom: 3px solid white;
+}
+
+h1 {
+    font-family: 'Lobster', cursive;
+    font-size: 32px;
+    color: white;
+    text-shadow: 1px 1px black;
+}
+
+h2 {
+    font-family: 'Indie Flower', cursive;
+    font-size: 27px;
+}
+
+#topo {
+    background-image: url('../images/topo.jpg');
+    background-size: cover;
+    background-position:top;
+}
+
+.container {
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.container input {
+    font-family: 'Indie Flower', cursive;
+    font-size: 22px;
+}
+
+.cadastro {
+    display: flex; 
+    align-items: center; 
+    flex-direction:column; 
+    border: 2px solid grey;
+    background-color: whitesmoke; 
+    border-radius: 20px; 
+    color: black;
+}
+
+.matricula {
+    display: flex;
+    align-items: center;
+    border: 2px solid grey;
+    background-color: whitesmoke; 
+    border-radius: 20px; 
+}
+
+.cadastro input {
+    border: 1px solid rgb(41, 109, 235);
+    width: 320px;
+	height: 20px;
+	border-radius: 5px;
+	outline: none;
+	padding-left: 10px;
+	margin-bottom: 10px;
+    padding-bottom: 10px;
+    font-size: 15px;
+}
+
+input {
+    font-size: 12px;
+    cursor: pointer;
+}
+
+#numero input {
+    width: 12px;
+}
+
+input[type=submit] {
+    background-color: rgb(1, 122, 96);
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin: 10px;
+}
+
+input[type=reset] {
+    background-color: red;
+    border: none;
+    color: white;
+    cursor: pointer;
+    margin: 10px;
+}
+
+input[type=submit]:hover {
+    background-color: rgb(1, 122, 96);
+}
+
+input[type=reset]:hover {
+    background-color: red;
+}
+
+.input[type=button], input[type=submit]:hover { /* Muda cor mouse sobre Enviar */
+    background-color: rgb(70, 158, 73);
+    color: white;
+    transition-duration: 0.5s;
+}
+
+.input[type=button], input[type=reset]:hover { /* Muda cor mouse sobre Limpar */
+    background-color: rgb(70, 158, 73);; 
+    color: white;
+    transition-duration: 0.5s;
+}
+
+.dadosAluno {
+    display: flex;
+    flex-direction: column;
+	justify-content: space-between;
+    height: auto;
+    width: 85%;
+}
+
+.matricula {
+    display: flex;
+    flex-direction: column;
+	justify-content: center;
+    height: auto;
+    width: 85%;
+}
+
+.templateAluno {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    border: 2px solid grey;
+    border-radius: 15px;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.botao {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    height: 5%;
+    flex-direction: row;
+}
+
+
+.dados1,.dados2 {
+    width: 50%;
+    margin-left: 5%;
+}
+
+.matricula1, .matricula2{
+    margin: 10px;
+    align-items: center;
+    
+}
+
+.matricula2 {
+    display: flex;
+    flex-direction: column;
+    padding: 1%;
+    border: 1px solid rgb(41, 109, 235);
+    border-radius: 10px;
+}
+
+textarea {
+    margin-bottom: 2%;
+    resize: none;
+}
+
+footer {
+    height: auto;
+    color: green;
+    text-align: center;
+}
+
+.rodape {
+    text-align: center;
+}
+
+/***RESPONSIVIDADE****/
+@media (max-width:1020px) and (min-width: 768px) {
+
+    .templateAluno {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+} /*OK*/
+
+@media (max-width:767px) and (min-width:642px) {
+
+    .templateAluno {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .botao {
+        display: flex;
+        justify-content: center;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .matricula2 {
+        width: 70%;
+        height: auto;
+    }
+
+    .dados1,.dados2 {
+        margin-left: 0;
+    }
+
+    .cadastro input {
+        width: 75%;
+        font-size: 12px;
+    }
+
+    textarea {
+        width: 65%;
+        height: auto;
+    }
+
+} /*OK*/
+
+@media (max-width:641px) and (min-width:320px) {
+
+    .templateAluno {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .dadosAluno input {
+        width: 95%;
+    }
+
+    .matricula {
+        display: flex;
+        border: 2px solid grey;
+        background-color: whitesmoke;
+        border-radius: 20px;
+    }
+
+    .matricula1  {
+        width: 55%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .matricula2 {
+        display: flex;
+        flex-direction: column;
+        border: none;
+    }
+
+    textarea {
+        width: 65%;
+        height: auto;
+    }
+
+    .cadastro input {
+        width: 100%;
+        font-size: 11px;
+    }
+
+    input {
+        font-size: 15px;
+    }
+
+    .botao {
+        display: flex;
+        justify-content: center;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        flex-direction: row;
+        align-items: center;
+    }
+
+}
